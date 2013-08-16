@@ -1,1 +1,493 @@
-.contain-to-grid{width:100%;background:#111}.contain-to-grid .top-bar{margin-bottom:0}.fixed{width:100%;left:0;position:fixed;top:0;z-index:99}.top-bar{overflow:hidden;height:45px;line-height:45px;position:relative;background:#111;margin-bottom:1.875em}.top-bar a{text-decoration:none}.top-bar ul{margin-bottom:0;padding-left:0;list-style:none}.top-bar .row{max-width:none}.top-bar form,.top-bar input{margin-bottom:0}.top-bar input{height:2.45em}.top-bar .button{padding-top:.5em;padding-bottom:.5em;margin-bottom:0}.top-bar .title-area{position:relative;margin:0}.top-bar .name{height:45px;margin:0;font-size:16px}.top-bar .name h1{line-height:45px;font-size:1.0625em;margin:0}.top-bar .name h1 a{font-weight:bold;color:#fff;width:50%;display:block;padding:0 15px}.top-bar .toggle-topbar{position:absolute;right:0;top:0}.top-bar .toggle-topbar a{color:#fff;text-transform:uppercase;font-size:0.8125em;font-weight:bold;position:relative;display:block;padding:0 15px;height:45px;line-height:45px}.top-bar .toggle-topbar.menu-icon{right:15px;top:50%;margin-top:-16px;padding-left:40px}.top-bar .toggle-topbar.menu-icon a{text-indent:-48px;width:34px;height:34px;line-height:33px;padding:0;color:#fff}.top-bar .toggle-topbar.menu-icon a span{position:absolute;right:0;display:block;width:16px;height:0;-webkit-box-shadow:0 10px 0 1px #fff,0 16px 0 1px #fff,0 22px 0 1px #fff;box-shadow:0 10px 0 1px #fff,0 16px 0 1px #fff,0 22px 0 1px #fff}.top-bar.expanded{height:auto;background:transparent}.top-bar.expanded .title-area{background:#111}.top-bar.expanded .toggle-topbar a{color:#888}.top-bar.expanded .toggle-topbar a span{-webkit-box-shadow:0 10px 0 1px #888,0 16px 0 1px #888,0 22px 0 1px #888;box-shadow:0 10px 0 1px #888,0 16px 0 1px #888,0 22px 0 1px #888}.top-bar-section{left:0;position:relative;width:auto;-webkit-transition:left 300ms ease-out;-moz-transition:left 300ms ease-out;transition:left 300ms ease-out}.top-bar-section ul{width:100%;height:auto;display:block;background:#222;font-size:16px;margin:0}.top-bar-section .divider,.top-bar-section [role="separator"]{border-bottom:solid 1px #2b2b2b;border-top:solid 1px #000;clear:both;height:1px;width:100%}.top-bar-section ul li>a{display:block;width:100%;color:#fff;padding:12px 0 12px 0;padding-left:15px;font-size:0.8125em;font-weight:bold;background:#222}.top-bar-section ul li>a.button{background:#2ba6cb;font-size:0.8125em}.top-bar-section ul li>a.button.hover{background:#2284a1}.top-bar-section ul li>a.button.secondary{background:#e9e9e9}.top-bar-section ul li>a.button.secondary.hover{background:#d0d0d0}.top-bar-section ul li>a.button.success{background:#5da423}.top-bar-section ul li>a.button.success.hover{background:#457a1a}.top-bar-section ul li>a.button.alert{background:#c60f13}.top-bar-section ul li>a.button.alert.hover{background:#970b0e}.top-bar-section ul li.hover>a{background:#090909;color:#fff}.top-bar-section ul li.active>a{background:#090909;color:#fff}.top-bar-section .has-form{padding:15px}.top-bar-section .has-dropdown{position:relative}.top-bar-section .has-dropdown>a:after{content:"";display:block;width:0;height:0;border:inset 5px;border-color:transparent transparent transparent rgba(255,255,255,0.5);border-left-style:solid;margin-right:15px;margin-top:-4.5px;position:absolute;top:50%;right:0}.top-bar-section .has-dropdown.moved{position:static}.top-bar-section .has-dropdown.moved>.dropdown{visibility:visible}.top-bar-section .dropdown{position:absolute;left:100%;top:0;visibility:hidden;z-index:99}.top-bar-section .dropdown li{width:100%;height:auto}.top-bar-section .dropdown li a{font-weight:normal;padding:8px 15px}.top-bar-section .dropdown li.title h5{margin-bottom:0}.top-bar-section .dropdown li.title h5 a{color:#fff;line-height:22.5px;display:block}.top-bar-section .dropdown label{padding:8px 15px 2px;margin-bottom:0;text-transform:uppercase;color:#555;font-weight:bold;font-size:0.625em}.top-bar-js-breakpoint{width:58.75em !important;visibility:hidden}.js-generated{display:block}@media only screen and (min-width: 58.75em){.top-bar{background:#111;*zoom:1;overflow:visible}.top-bar:before,.top-bar:after{content:" ";display:table}.top-bar:after{clear:both}.top-bar .toggle-topbar{display:none}.top-bar .title-area{float:left}.top-bar .name h1 a{width:auto}.top-bar input,.top-bar .button{line-height:2em;font-size:0.875em;height:2em;padding:0 10px;position:relative;top:8px}.top-bar.expanded{background:#111}.contain-to-grid .top-bar{max-width:62.5em;margin:0 auto}.top-bar-section{-webkit-transition:none 0 0;-moz-transition:none 0 0;transition:none 0 0;left:0 !important}.top-bar-section ul{width:auto;height:auto !important;display:inline}.top-bar-section ul li{float:left}.top-bar-section ul li .js-generated{display:none}.top-bar-section li a:not(.button){padding:0 15px;line-height:45px;background:#111}.top-bar-section li a:not(.button).hover{background:#000}.top-bar-section .has-dropdown>a{padding-right:35px !important}.top-bar-section .has-dropdown>a:after{content:"";display:block;width:0;height:0;border:inset 5px;border-color:rgba(255,255,255,0.5) transparent transparent transparent;border-top-style:solid;margin-top:-2.5px;top:22.5px}.top-bar-section .has-dropdown.moved{position:relative}.top-bar-section .has-dropdown.moved>.dropdown{visibility:hidden}.top-bar-section .has-dropdown.hover>.dropdown{visibility:visible}.top-bar-section .has-dropdown .dropdown li.has-dropdown>a:after{border:none;content:"\00bb";margin-top:-16px;right:5px}.top-bar-section .dropdown{left:0;top:auto;background:transparent;min-width:100%}.top-bar-section .dropdown li a{color:#fff;line-height:1;white-space:nowrap;padding:7px 15px;background:#1e1e1e}.top-bar-section .dropdown li label{white-space:nowrap;background:#1e1e1e}.top-bar-section .dropdown li .dropdown{left:100%;top:0}.top-bar-section>ul>.divider,.top-bar-section>ul>[role="separator"]{border-bottom:none;border-top:none;border-right:solid 1px #2b2b2b;border-left:solid 1px #000;clear:none;height:45px;width:0px}.top-bar-section .has-form{background:#111;padding:0 15px;height:45px}.top-bar-section ul.right li .dropdown{left:auto;right:0}.top-bar-section ul.right li .dropdown li .dropdown{right:100%}.no-js .top-bar-section ul li:hover>a{background:#090909;color:#fff}.no-js .top-bar-section ul li:active>a{background:#090909;color:#fff}.no-js .top-bar-section .has-dropdown:hover>.dropdown{visibility:visible}}
+/* Wrapped around .top-bar to contain to grid width */
+/* line 72, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+.contain-to-grid {
+  width: 100%;
+  background: #111111;
+}
+/* line 76, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+.contain-to-grid .top-bar {
+  margin-bottom: 1.875em;
+}
+
+/* line 80, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+.fixed {
+  width: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+}
+
+/* line 88, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+.top-bar {
+  overflow: hidden;
+  height: 45px;
+  line-height: 45px;
+  position: relative;
+  background: #111111;
+  margin-bottom: 1.875em;
+}
+/* line 96, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+.top-bar a {
+  text-decoration: none;
+}
+/* line 101, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+.top-bar ul {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+/* line 107, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+.top-bar .row {
+  max-width: none;
+}
+/* line 110, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+.top-bar form,
+.top-bar input {
+  margin-bottom: 0;
+}
+/* line 112, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+.top-bar input {
+  height: 2.45em;
+}
+/* line 114, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+.top-bar .button {
+  padding-top: .5em;
+  padding-bottom: .5em;
+  margin-bottom: 0;
+}
+/* line 117, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+.top-bar .title-area {
+  position: relative;
+  margin: 0;
+}
+/* line 122, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+.top-bar .name {
+  height: 45px;
+  margin: 0;
+  font-size: 16;
+}
+/* line 127, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+.top-bar .name h1 {
+  line-height: 45px;
+  font-size: 1.0625em;
+  margin: 0;
+}
+/* line 131, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+.top-bar .name h1 a {
+  font-weight: bold;
+  color: white;
+  width: 50%;
+  display: block;
+  padding: 0 15px;
+}
+/* line 142, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+.top-bar .toggle-topbar {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+/* line 147, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+.top-bar .toggle-topbar a {
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.8125em;
+  font-weight: bold;
+  position: relative;
+  display: block;
+  padding: 0 15px;
+  height: 45px;
+  line-height: 45px;
+}
+/* line 160, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+.top-bar .toggle-topbar.menu-icon {
+  right: 15px;
+  top: 50%;
+  margin-top: -16px;
+  padding-left: 40px;
+}
+/* line 166, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+.top-bar .toggle-topbar.menu-icon a {
+  text-indent: -48px;
+  width: 34px;
+  height: 34px;
+  line-height: 33px;
+  padding: 0;
+  color: white;
+}
+/* line 174, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+.top-bar .toggle-topbar.menu-icon a span {
+  position: absolute;
+  right: 0;
+  display: block;
+  width: 16px;
+  height: 0;
+  -webkit-box-shadow: 0 10px 0 1px white, 0 16px 0 1px white, 0 22px 0 1px white;
+  box-shadow: 0 10px 0 1px white, 0 16px 0 1px white, 0 22px 0 1px white;
+}
+/* line 195, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+.top-bar.expanded {
+  height: auto;
+  background: transparent;
+}
+/* line 199, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+.top-bar.expanded .title-area {
+  background: #111111;
+}
+/* line 202, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+.top-bar.expanded .toggle-topbar a {
+  color: #888888;
+}
+/* line 203, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+.top-bar.expanded .toggle-topbar a span {
+  -webkit-box-shadow: 0 10px 0 1px #888888, 0 16px 0 1px #888888, 0 22px 0 1px #888888;
+  box-shadow: 0 10px 0 1px #888888, 0 16px 0 1px #888888, 0 22px 0 1px #888888;
+}
+
+/* line 221, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+.top-bar-section {
+  left: 0;
+  position: relative;
+  width: auto;
+  -webkit-transition: left 300ms ease-out;
+  -moz-transition: left 300ms ease-out;
+  transition: left 300ms ease-out;
+}
+/* line 227, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+.top-bar-section ul {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: #222222;
+  font-size: 16;
+  margin: 0;
+}
+/* line 237, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+.top-bar-section .divider,
+.top-bar-section [role="separator"] {
+  border-bottom: solid 1px #2b2b2b;
+  border-top: solid 1px black;
+  clear: both;
+  height: 1px;
+  width: 100%;
+}
+/* line 246, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+.top-bar-section ul li > a {
+  display: block;
+  width: 100%;
+  color: white;
+  padding: 12px 0 12px 0;
+  padding-left: 15px;
+  font-size: 0.8125em;
+  font-weight: bold;
+  background: #222222;
+}
+/* line 256, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+.top-bar-section ul li > a.button {
+  background: #2ba6cb;
+  font-size: 0.8125em;
+}
+/* line 259, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+.top-bar-section ul li > a.button.hover {
+  background: #2284a1;
+}
+/* line 263, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+.top-bar-section ul li > a.button.secondary {
+  background: #e9e9e9;
+}
+/* line 265, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+.top-bar-section ul li > a.button.secondary.hover {
+  background: #d0d0d0;
+}
+/* line 269, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+.top-bar-section ul li > a.button.success {
+  background: #5da423;
+}
+/* line 271, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+.top-bar-section ul li > a.button.success.hover {
+  background: #457a1a;
+}
+/* line 275, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+.top-bar-section ul li > a.button.alert {
+  background: #c60f13;
+}
+/* line 277, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+.top-bar-section ul li > a.button.alert.hover {
+  background: #970b0e;
+}
+/* line 285, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+.top-bar-section ul li.hover > a {
+  background: #090909;
+  color: white;
+}
+/* line 291, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+.top-bar-section ul li.active > a {
+  background: #090909;
+  color: white;
+}
+/* line 298, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+.top-bar-section .has-form {
+  padding: 15px;
+}
+/* line 301, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+.top-bar-section .has-dropdown {
+  position: relative;
+}
+/* line 305, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+.top-bar-section .has-dropdown > a:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: inset 5px;
+  border-color: transparent transparent transparent rgba(255, 255, 255, 0.5);
+  border-left-style: solid;
+  margin-right: 15px;
+  margin-top: -4.5px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+/* line 315, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+.top-bar-section .has-dropdown.moved {
+  position: static;
+}
+/* line 316, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+.top-bar-section .has-dropdown.moved > .dropdown {
+  visibility: visible;
+}
+/* line 323, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+.top-bar-section .dropdown {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  visibility: hidden;
+  z-index: 99;
+}
+/* line 330, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+.top-bar-section .dropdown li {
+  width: 100%;
+  height: auto;
+}
+/* line 334, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+.top-bar-section .dropdown li a {
+  font-weight: normal;
+  padding: 8px 15px;
+}
+/* line 337, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+.top-bar-section .dropdown li a.parent-link {
+  font-weight: bold;
+}
+/* line 342, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+.top-bar-section .dropdown li.title h5 {
+  margin-bottom: 0;
+}
+/* line 343, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+.top-bar-section .dropdown li.title h5 a {
+  color: white;
+  line-height: 22.5px;
+  display: block;
+}
+/* line 351, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+.top-bar-section .dropdown label {
+  padding: 8px 15px 2px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  color: #555555;
+  font-weight: bold;
+  font-size: 0.625em;
+}
+
+/* line 363, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+.top-bar-js-breakpoint {
+  width: 58.75em !important;
+  visibility: hidden;
+}
+
+/* line 367, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+.js-generated {
+  display: block;
+}
+
+@media only screen and (min-width: 58.75em) {
+  /* line 372, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+  .top-bar {
+    background: #111111;
+    *zoom: 1;
+    overflow: visible;
+  }
+  /* line 1339, ../../../../sass/_settings.scss */
+  .top-bar:before, .top-bar:after {
+    content: " ";
+    display: table;
+  }
+  /* line 1340, ../../../../sass/_settings.scss */
+  .top-bar:after {
+    clear: both;
+  }
+  /* line 377, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+  .top-bar .toggle-topbar {
+    display: none;
+  }
+  /* line 379, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+  .top-bar .title-area {
+    float: left;
+  }
+  /* line 380, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+  .top-bar .name h1 a {
+    width: auto;
+  }
+  /* line 383, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+  .top-bar input,
+  .top-bar .button {
+    line-height: 2em;
+    font-size: 0.875em;
+    height: 2em;
+    padding: 0 10px;
+    position: relative;
+    top: 8px;
+  }
+  /* line 392, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+  .top-bar.expanded {
+    background: #111111;
+  }
+
+  /* line 395, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+  .contain-to-grid .top-bar {
+    max-width: 62.5em;
+    margin: 0 auto;
+    margin-bottom: 1.875em;
+  }
+
+  /* line 401, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+  .top-bar-section {
+    -webkit-transition: none 0 0;
+    -moz-transition: none 0 0;
+    transition: none 0 0;
+    left: 0 !important;
+  }
+  /* line 405, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+  .top-bar-section ul {
+    width: auto;
+    height: auto !important;
+    display: inline;
+  }
+  /* line 410, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+  .top-bar-section ul li {
+    float: left;
+  }
+  /* line 412, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+  .top-bar-section ul li .js-generated {
+    display: none;
+  }
+  /* line 417, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+  .top-bar-section li a:not(.button) {
+    padding: 0 15px;
+    line-height: 45px;
+    background: #111111;
+  }
+  /* line 421, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+  .top-bar-section li a:not(.button).hover {
+    background: black;
+  }
+  /* line 426, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+  .top-bar-section .has-dropdown > a {
+    padding-right: 35px !important;
+  }
+  /* line 429, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+  .top-bar-section .has-dropdown > a:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border: inset 5px;
+    border-color: rgba(255, 255, 255, 0.5) transparent transparent transparent;
+    border-top-style: solid;
+    margin-top: -2.5px;
+    top: 22.5px;
+  }
+  /* line 436, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+  .top-bar-section .has-dropdown.moved {
+    position: relative;
+  }
+  /* line 437, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+  .top-bar-section .has-dropdown.moved > .dropdown {
+    visibility: hidden;
+  }
+  /* line 441, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+  .top-bar-section .has-dropdown.hover > .dropdown, .top-bar-section .has-dropdown.not-click:hover > .dropdown {
+    visibility: visible;
+  }
+  /* line 448, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+  .top-bar-section .has-dropdown .dropdown li.has-dropdown > a:after {
+    border: none;
+    content: "\00bb";
+    margin-top: -16px;
+    right: 5px;
+  }
+  /* line 459, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+  .top-bar-section .dropdown {
+    left: 0;
+    top: auto;
+    background: transparent;
+    min-width: 100%;
+  }
+  /* line 466, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+  .top-bar-section .dropdown li a {
+    color: white;
+    line-height: 1;
+    white-space: nowrap;
+    padding: 7px 15px;
+    background: #1e1e1e;
+  }
+  /* line 474, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+  .top-bar-section .dropdown li label {
+    white-space: nowrap;
+    background: #1e1e1e;
+  }
+  /* line 480, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+  .top-bar-section .dropdown li .dropdown {
+    left: 100%;
+    top: 0;
+  }
+  /* line 488, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+  .top-bar-section > ul > .divider, .top-bar-section > ul > [role="separator"] {
+    border-bottom: none;
+    border-top: none;
+    border-right: solid 1px #2b2b2b;
+    border-left: solid 1px black;
+    clear: none;
+    height: 45px;
+    width: 0px;
+  }
+  /* line 498, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+  .top-bar-section .has-form {
+    background: #111111;
+    padding: 0 15px;
+    height: 45px;
+  }
+  /* line 506, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+  .top-bar-section ul.right li .dropdown {
+    left: auto;
+    right: 0;
+  }
+  /* line 510, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+  .top-bar-section ul.right li .dropdown li .dropdown {
+    right: 100%;
+  }
+
+  /* line 520, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+  .no-js .top-bar-section ul li:hover > a {
+    background: #090909;
+    color: white;
+  }
+  /* line 526, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+  .no-js .top-bar-section ul li:active > a {
+    background: #090909;
+    color: white;
+  }
+  /* line 534, ../../../../sass/components/bitrix/menu/topbar/style.scss */
+  .no-js .top-bar-section .has-dropdown:hover > .dropdown {
+    visibility: visible;
+  }
+}

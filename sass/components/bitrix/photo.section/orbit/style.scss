@@ -21,7 +21,7 @@ $orbit-timer-bg: rgba(0,0,0,0.6) !default;
 
 // We use these to control the bullet nav styles
 $orbit-bullet-nav-color: #999 !default;
-$orbit-bullet-nav-color-active: #222 !default;
+$orbit-bullet-nav-color-active: #555 !default;
 
 // We use thes to controls the style of slide numbers
 $orbit-slide-number-bg: rgba(0,0,0,0) !default;
@@ -75,12 +75,8 @@ $preloader-class: "preloader" !default;
 
       // Show images when .orbit-container is loaded
       li { display: block;
-	height: 100%;
-        .orbit-caption { 
-		display: block; 
-		bottom: 0px;
-		position: absolute;
-	}
+
+        .orbit-caption { display: block; }
       }
     }
   }
@@ -130,15 +126,27 @@ $preloader-class: "preloader" !default;
       padding: 0;
       position: relative;
 
-      img { 
-	display: block; 
-	margin: 0 auto;
-      }
+      img { display: block; max-width: 100%; }
 
       &>* {
-        position: relative;
-        float: $default-float;
-        height: auto;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        @if $text-direction == rtl {
+          margin-right: 100%;
+        }
+        @else {
+          margin-left: 100%;
+        }
+        
+        &:first-child {
+          @if $text-direction == rtl {
+          margin-right: 0%;
+          }
+          @else {
+          margin-left: 0%;
+          }
+        }
 
         .orbit-caption {
           position: absolute;
@@ -161,6 +169,7 @@ $preloader-class: "preloader" !default;
       span { font-weight: 700; padding: $orbit-slide-number-padding;}
       color: $orbit-slide-number-font-color;
       background: $orbit-slide-number-bg;
+      z-index: 10;
     }
 
     .orbit-timer {
@@ -169,6 +178,7 @@ $preloader-class: "preloader" !default;
       #{$opposite-direction}: 10px;
       height: 6px;
       width: 100px;
+      z-index: 10;
       .orbit-progress {
         height: 100%;
         background-color: $orbit-timer-bg-old;
@@ -257,16 +267,15 @@ $preloader-class: "preloader" !default;
     overflow: hidden;
     position: relative;
     top: 10px;
-    padding-left: 0;
 
     li {
       display: block;
-      width: 18px;
-      height: 18px;
+      width: 10px;
+      height: 10px;
       background: $orbit-bullet-nav-color;
       float: $default-float;
       margin-#{$opposite-direction}: 6px;
-      border: solid 2px $orbit-bullet-nav-color-active;
+      border: solid 1px $orbit-bullet-nav-color-active;
       @include radius(1000px);
 
       &.active {
@@ -298,6 +307,20 @@ $preloader-class: "preloader" !default;
       .orbit-bullets { display: block; }
     }
 
+  }
+
+  @media only screen and (max-width: #{$small-screen}) {
+    .orbit-stack-on-small {
+      .orbit-slides-container {height: auto !important;}
+      .orbit-slides-container > * {
+        position: relative;
+        margin-left: 0% !important;
+      }
+      .orbit-timer,
+      .orbit-next,
+      .orbit-prev,
+      .orbit-bullets {display: none;}
+    }
   }
 
 }

@@ -2,9 +2,9 @@
   'use strict';
 
   Foundation.libs.forms = {
-    name: 'forms',
+    name : 'forms',
 
-    version: '4.2.3',
+    version: '4.3.2',
 
     cache: {},
 
@@ -64,7 +64,7 @@
         })
         .on('change.fndtn.forms', 'form.custom select', function (e, force_refresh) {
           if ($(this).is('[data-customforms="disabled"]')) return;
-          self.refresh_custom_select($(this), force_refresh);
+          self.refresh_custom_selection($(this));
         })
         .on('click.fndtn.forms', 'form.custom label', function (e) {
           if ($(e.target).is('label')) {
@@ -150,17 +150,32 @@
 
             //store the old value in data
             $select.data('prevalue', $oldThis.html());
-            $select.trigger('change');
+            
+            // Kick off full DOM change event
+            if (typeof (document.createEvent) != 'undefined') {
+              var event = document.createEvent('HTMLEvents');
+              event.initEvent('change', true, true);
+              $select[0].dispatchEvent(event);
+            } else {
+              $select[0].fireEvent('onchange'); // for IE
+            }
           }
       });
 
       $(window).on('keydown', function (e) {
         var focus = document.activeElement,
             self = Foundation.libs.forms,
-            dropdown = $('.custom.dropdown.open');
+            dropdown = $('.custom.dropdown'),
+			select = getFirstPrevSibling(dropdown, 'select'),
+			inputs = $('input,select,textarea,button'); // Zepto-compatible jQuery(":input")
 
-        if (dropdown.length > 0) {
+        if (dropdown.length > 0 && dropdown.hasClass('open')) {
           e.preventDefault();
+
+		  if (e.which === 9) {
+		  	  $(inputs[$(inputs).index(select) + 1]).focus();
+			  dropdown.removeClass('open');
+		  }
 
           if (e.which === 13) {
             dropdown.find('li.selected').trigger('click');
@@ -201,6 +216,15 @@
           }
         }
       });
+
+	  $(window).on('keyup', function (e) {
+          var focus = document.activeElement,
+              dropdown = $('.custom.dropdown');
+
+		  if (focus === dropdown.find('.current')[0]) {
+			  dropdown.find('.selector').focus().click();
+		  }
+	  });
 
       this.settings.init = true;
     },
@@ -366,19 +390,13 @@
       if ($listItems.length !== this.cache[$customSelect.data('id')] || force_refresh) {
         $customSelect.find('ul').html('');
 
+        // rebuild and re-populate all at once
+        var customSelectHtml = '';
         $options.each(function () {
-          var $li = $('<li>' + $(this).html() + '</li>');
-          $customSelect.find('ul').append($li);
-        });
-
-        // re-populate
-        $options.each(function (index) {
-          if (this.selected) {
-            $customSelect.find('li').eq(index).addClass('selected');
-            $customSelect.find('.current').html($(this).html());
-          }
-          if ($(this).is(':disabled')) {
-            $customSelect.find('li').eq(index).addClass('disabled');
+          var $this = $(this), thisHtml = $this.html(), thisSelected = this.selected;
+          customSelectHtml += '<li class="' + (thisSelected ? ' selected ' : '') + ($this.is(':disabled') ? ' disabled ' : '') + '">' + thisHtml + '</li>';
+          if (thisSelected) {
+            $customSelect.find('.current').html(thisHtml);
           }
         });
 
@@ -397,6 +415,11 @@
         // cache list length
         this.cache[$customSelect.data('id')] = $listItems.length;
       }
+    },
+    
+    refresh_custom_selection: function ($select) {
+      var selectedValue = $('option:selected', $select).text();
+      $('a.current', $select.next()).text(selectedValue);
     },
 
     toggle_checkbox: function ($element) {

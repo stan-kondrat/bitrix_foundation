@@ -440,12 +440,12 @@ body {
   font-style: normal;
   line-height: 1;
   position: relative;
-  cursor: default;
+  cursor: "default";
 }
 
 /* line 285, sass/foundation/components/_global.scss */
 a:hover {
-  cursor: pointer;
+  cursor: "pointer";
 }
 
 /* line 288, sass/foundation/components/_global.scss */

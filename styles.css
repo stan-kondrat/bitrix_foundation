@@ -440,12 +440,12 @@ body {
   font-style: normal;
   line-height: 1;
   position: relative;
-  cursor: default;
+  cursor: "default";
 }
 
 /* line 285, sass/foundation/components/_global.scss */
 a:hover {
-  cursor: pointer;
+  cursor: "pointer";
 }
 
 /* line 288, sass/foundation/components/_global.scss */
@@ -2196,7 +2196,7 @@ acronym {
   font-size: 90%;
   color: #222222;
   border-bottom: 1px dotted #dddddd;
-  cursor: help;
+  cursor: "help";
 }
 
 /* line 305, ../../../../var/lib/gems/1.8/gems/zurb-foundation-4.3.1/scss/foundation/components/_type.scss */
@@ -2259,7 +2259,7 @@ blockquote p {
 }
 /* line 355, ../../../../var/lib/gems/1.8/gems/zurb-foundation-4.3.1/scss/foundation/components/_type.scss */
 .vevent abbr {
-  cursor: default;
+  cursor: "default";
   text-decoration: none;
   font-weight: bold;
   border: none;
@@ -2402,7 +2402,7 @@ blockquote p {
 button, .button {
   border-style: solid;
   border-width: 1px;
-  cursor: pointer;
+  cursor: "pointer";
   font-family: inherit;
   font-weight: bold;
   line-height: 1;
@@ -2515,7 +2515,7 @@ button.disabled, button[disabled], .button.disabled, .button[disabled] {
   background-color: #2ba6cb;
   border-color: #2284a1;
   color: white;
-  cursor: default;
+  cursor: "default";
   opacity: 0.6;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -2537,7 +2537,7 @@ button.disabled.secondary, button[disabled].secondary, .button.disabled.secondar
   background-color: #e9e9e9;
   border-color: #d0d0d0;
   color: #333333;
-  cursor: default;
+  cursor: "default";
   opacity: 0.6;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -2559,7 +2559,7 @@ button.disabled.success, button[disabled].success, .button.disabled.success, .bu
   background-color: #5da423;
   border-color: #457a1a;
   color: white;
-  cursor: default;
+  cursor: "default";
   opacity: 0.6;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -2581,7 +2581,7 @@ button.disabled.alert, button[disabled].alert, .button.disabled.alert, .button[d
   background-color: #c60f13;
   border-color: #970b0e;
   color: white;
-  cursor: default;
+  cursor: "default";
   opacity: 0.6;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -3345,7 +3345,7 @@ form.custom .custom.dropdown ul {
 form.custom .custom.dropdown ul li {
   color: #555555;
   font-size: 0.875em;
-  cursor: default;
+  cursor: "default";
   padding-top: 0.25em;
   padding-bottom: 0.25em;
   padding-left: 0.375em;
@@ -3369,7 +3369,7 @@ form.custom .custom.dropdown ul li:hover {
 /* line 260, ../../../../var/lib/gems/1.8/gems/zurb-foundation-4.3.1/scss/foundation/components/_custom-forms.scss */
 form.custom .custom.dropdown ul li.selected:hover {
   background: #eeeeee;
-  cursor: default;
+  cursor: "default";
   color: black;
 }
 /* line 267, ../../../../var/lib/gems/1.8/gems/zurb-foundation-4.3.1/scss/foundation/components/_custom-forms.scss */
@@ -3433,7 +3433,7 @@ form.custom .custom.disabled {
   right: 0.6875em;
   color: #aaaaaa;
   font-weight: bold;
-  cursor: pointer;
+  cursor: "pointer";
 }
 
 @media only screen and (min-width: 768px) {
@@ -3656,7 +3656,7 @@ form.custom .custom.disabled {
     overflow: hidden;
     margin-right: 1px;
     position: relative;
-    cursor: pointer;
+    cursor: "pointer";
     opacity: 0.4;
   }
   /* line 185, ../../../../var/lib/gems/1.8/gems/zurb-foundation-4.3.1/scss/foundation/components/_clearing.scss */
@@ -3674,7 +3674,7 @@ form.custom .custom.disabled {
   }
   /* line 201, ../../../../var/lib/gems/1.8/gems/zurb-foundation-4.3.1/scss/foundation/components/_clearing.scss */
   .clearing-assembled .clearing-container .carousel > ul li img {
-    cursor: pointer !important;
+    cursor: "pointer" !important;
     min-width: 100% !important;
   }
   /* line 206, ../../../../var/lib/gems/1.8/gems/zurb-foundation-4.3.1/scss/foundation/components/_clearing.scss */

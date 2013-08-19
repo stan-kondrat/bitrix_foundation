@@ -46,3 +46,7 @@
 // @import "foundation/components/tooltips";
 // @import "foundation/components/dropdown";
 
+// bitrix fix
+.bx-list-over {
+	position: absolute;
+}

@@ -261,7 +261,7 @@ $glowing-effect-color: $input-focus-border-color !default;
   form .row { @include form-row-base; }
 
   /* Label Styles */
-  label { @include form-label;
+  label { @include form-label(inline,false);
     &.right { @include form-label(right,false); }
     &.inline { @include form-label(inline,false); }
     /* Styles for required inputs */
@@ -313,19 +313,19 @@ $glowing-effect-color: $input-focus-border-color !default;
   }
 
   /* We use this to get basic styling on all basic form elements */
-  input[type="text"],
-  input[type="password"],
-  input[type="date"],
-  input[type="datetime"],
-  input[type="datetime-local"],
-  input[type="month"],
-  input[type="week"],
-  input[type="email"],
-  input[type="number"],
-  input[type="search"],
-  input[type="tel"],
-  input[type="time"],
-  input[type="url"],
+  .row input[type="text"],
+  .row input[type="password"],
+  .row input[type="date"],
+  .row input[type="datetime"],
+  .row input[type="datetime-local"],
+  .row input[type="month"],
+  .row input[type="week"],
+  .row input[type="email"],
+  .row input[type="number"],
+  .row input[type="search"],
+  .row input[type="tel"],
+  .row input[type="time"],
+  .row input[type="url"],
   textarea {
     @include form-element;
     @if not $input-include-glowing-effect {
@@ -334,15 +334,15 @@ $glowing-effect-color: $input-focus-border-color !default;
   }
 
   /* Adjust margin for form elements below */
-  input[type="file"],
-  input[type="checkbox"],
-  input[type="radio"],
-  select {
+  .row input[type="file"],
+  .row input[type="checkbox"],
+  .row input[type="radio"],
+  .row select {
     margin: 0 0 $form-spacing 0;
   }
 
   /* Normalize file input width */
-  input[type="file"] {
+  .row input[type="file"] {
     width:100%;
   }
 
